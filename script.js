@@ -23,3 +23,11 @@ function validateForm() {
 
   return true;
 }
+
+document.getElementById("signup-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (validateForm()) {
+    alert("Form is valid!");
+    // Simulate submission or redirect
+  }
+});
